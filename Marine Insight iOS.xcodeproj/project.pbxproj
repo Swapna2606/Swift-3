@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113194F91EB2762000964835 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113194F81EB2762000964835 /* ArticleCell.swift */; };
+		113194FB1EB277C000964835 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113194FA1EB277C000964835 /* Article.swift */; };
+		113194FD1EB30E6000964835 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113194FC1EB30E6000964835 /* DetailViewController.swift */; };
+		118D99DF1EB5049900931740 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118D99DD1EB5049900931740 /* FirstTableViewCell.swift */; };
+		118D99E01EB5049900931740 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118D99DE1EB5049900931740 /* FirstTableViewCell.xib */; };
+		118D99E81EB504E400931740 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118D99E61EB504E400931740 /* SecondTableViewCell.swift */; };
+		118D99E91EB504E400931740 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118D99E71EB504E400931740 /* SecondTableViewCell.xib */; };
+		118D99EB1EB5353000931740 /* ConnectionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118D99EA1EB5353000931740 /* ConnectionCheck.swift */; };
 		11DBFE161EAA26FE004814F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DBFE151EAA26FE004814F2 /* AppDelegate.swift */; };
 		11DBFE181EAA26FE004814F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DBFE171EAA26FE004814F2 /* ViewController.swift */; };
 		11DBFE1B1EAA26FE004814F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DBFE191EAA26FE004814F2 /* Main.storyboard */; };
@@ -34,6 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		113194F81EB2762000964835 /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		113194FA1EB277C000964835 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		113194FC1EB30E6000964835 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		118D99DD1EB5049900931740 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
+		118D99DE1EB5049900931740 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
+		118D99E61EB504E400931740 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		118D99E71EB504E400931740 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
+		118D99EA1EB5353000931740 /* ConnectionCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionCheck.swift; sourceTree = "<group>"; };
 		11DBFE121EAA26FE004814F2 /* Marine Insight iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marine Insight iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DBFE151EAA26FE004814F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11DBFE171EAA26FE004814F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +119,14 @@
 				11DBFE1C1EAA26FE004814F2 /* Assets.xcassets */,
 				11DBFE1E1EAA26FE004814F2 /* LaunchScreen.storyboard */,
 				11DBFE211EAA26FE004814F2 /* Info.plist */,
+				113194F81EB2762000964835 /* ArticleCell.swift */,
+				113194FA1EB277C000964835 /* Article.swift */,
+				113194FC1EB30E6000964835 /* DetailViewController.swift */,
+				118D99DD1EB5049900931740 /* FirstTableViewCell.swift */,
+				118D99DE1EB5049900931740 /* FirstTableViewCell.xib */,
+				118D99E61EB504E400931740 /* SecondTableViewCell.swift */,
+				118D99E71EB504E400931740 /* SecondTableViewCell.xib */,
+				118D99EA1EB5353000931740 /* ConnectionCheck.swift */,
 			);
 			path = "Marine Insight iOS";
 			sourceTree = "<group>";
@@ -193,6 +217,7 @@
 				TargetAttributes = {
 					11DBFE111EAA26FE004814F2 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = DNWS59QT89;
 						ProvisioningStyle = Automatic;
 					};
 					11DBFE251EAA26FE004814F2 = {
@@ -234,6 +259,8 @@
 			files = (
 				11DBFE201EAA26FE004814F2 /* LaunchScreen.storyboard in Resources */,
 				11DBFE1D1EAA26FE004814F2 /* Assets.xcassets in Resources */,
+				118D99E91EB504E400931740 /* SecondTableViewCell.xib in Resources */,
+				118D99E01EB5049900931740 /* FirstTableViewCell.xib in Resources */,
 				11DBFE1B1EAA26FE004814F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +286,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				118D99DF1EB5049900931740 /* FirstTableViewCell.swift in Sources */,
+				113194FB1EB277C000964835 /* Article.swift in Sources */,
 				11DBFE181EAA26FE004814F2 /* ViewController.swift in Sources */,
+				113194FD1EB30E6000964835 /* DetailViewController.swift in Sources */,
 				11DBFE161EAA26FE004814F2 /* AppDelegate.swift in Sources */,
+				118D99E81EB504E400931740 /* SecondTableViewCell.swift in Sources */,
+				118D99EB1EB5353000931740 /* ConnectionCheck.swift in Sources */,
+				113194F91EB2762000964835 /* ArticleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DNWS59QT89;
 				INFOPLIST_FILE = "Marine Insight iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marineinsight.Marine-Insight-iOS";
@@ -426,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DNWS59QT89;
 				INFOPLIST_FILE = "Marine Insight iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marineinsight.Marine-Insight-iOS";
@@ -507,6 +542,7 @@
 				11DBFE3C1EAA26FE004814F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11DBFE3D1EAA26FE004814F2 /* Build configuration list for PBXNativeTarget "Marine Insight iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +551,7 @@
 				11DBFE3F1EAA26FE004814F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11DBFE401EAA26FE004814F2 /* Build configuration list for PBXNativeTarget "Marine Insight iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +560,7 @@
 				11DBFE421EAA26FE004814F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
