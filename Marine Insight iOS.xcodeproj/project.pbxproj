@@ -16,6 +16,8 @@
 		118D99E91EB504E400931740 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118D99E71EB504E400931740 /* SecondTableViewCell.xib */; };
 		118D99EB1EB5353000931740 /* ConnectionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118D99EA1EB5353000931740 /* ConnectionCheck.swift */; };
 		119E57591EB8970D007B5F17 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119E57581EB8970D007B5F17 /* MenuManager.swift */; };
+		119E575B1EB8B022007B5F17 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119E575A1EB8B022007B5F17 /* MenuCell.xib */; };
+		119E575D1EB8B365007B5F17 /* MenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119E575C1EB8B365007B5F17 /* MenuViewCell.swift */; };
 		11DBFE161EAA26FE004814F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DBFE151EAA26FE004814F2 /* AppDelegate.swift */; };
 		11DBFE181EAA26FE004814F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DBFE171EAA26FE004814F2 /* ViewController.swift */; };
 		11DBFE1B1EAA26FE004814F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DBFE191EAA26FE004814F2 /* Main.storyboard */; };
@@ -52,6 +54,8 @@
 		118D99E71EB504E400931740 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
 		118D99EA1EB5353000931740 /* ConnectionCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionCheck.swift; sourceTree = "<group>"; };
 		119E57581EB8970D007B5F17 /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
+		119E575A1EB8B022007B5F17 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		119E575C1EB8B365007B5F17 /* MenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewCell.swift; sourceTree = "<group>"; };
 		11DBFE121EAA26FE004814F2 /* Marine Insight iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marine Insight iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DBFE151EAA26FE004814F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11DBFE171EAA26FE004814F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 				118D99E71EB504E400931740 /* SecondTableViewCell.xib */,
 				118D99EA1EB5353000931740 /* ConnectionCheck.swift */,
 				119E57581EB8970D007B5F17 /* MenuManager.swift */,
+				119E575A1EB8B022007B5F17 /* MenuCell.xib */,
+				119E575C1EB8B365007B5F17 /* MenuViewCell.swift */,
 			);
 			path = "Marine Insight iOS";
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119E575B1EB8B022007B5F17 /* MenuCell.xib in Resources */,
 				11DBFE201EAA26FE004814F2 /* LaunchScreen.storyboard in Resources */,
 				11DBFE1D1EAA26FE004814F2 /* Assets.xcassets in Resources */,
 				118D99E91EB504E400931740 /* SecondTableViewCell.xib in Resources */,
@@ -290,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				118D99DF1EB5049900931740 /* FirstTableViewCell.swift in Sources */,
+				119E575D1EB8B365007B5F17 /* MenuViewCell.swift in Sources */,
 				113194FB1EB277C000964835 /* Article.swift in Sources */,
 				11DBFE181EAA26FE004814F2 /* ViewController.swift in Sources */,
 				119E57591EB8970D007B5F17 /* MenuManager.swift in Sources */,

@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet var tableView: UITableView!
     var articles: [Article]? = []
+    var source = "shipping-news"
     var refresher: UIRefreshControl!
   
     
@@ -20,7 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         if(currentReachabilityStatus != .notReachable) {
         
-        fetchArticles()
+        fetchArticles(fromSouce: source)
         refresher = UIRefreshControl()
         refresher.attributedTitle = NSAttributedString(string: "Pull to Refresh")
         refresher.addTarget(self, action: #selector(ViewController.fetchArticles), for: UIControlEvents.valueChanged)
@@ -34,9 +35,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    func fetchArticles(){
+    func fetchArticles(fromSouce provider: String){
     
-        let urlRequest = URLRequest(url: URL(string:"http:www.marineinsight.com/api/get_recent_posts/?json=get_category_posts&slug=shipping-news&count=8")!)
+        let urlRequest = URLRequest(url: URL(string:"http:www.marineinsight.com/api/get_recent_posts/?json=get_category_posts&slug=\(provider)&count=8")!)
         let task = URLSession.shared.dataTask(with: urlRequest){ (data, response, error) in
         
             if error != nil{
@@ -84,6 +85,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         task.resume()
         
     
+    }
+    
+    let menuManager = MenuManager()
+    @IBAction func menuPressed(_ sender: Any) {
+        menuManager.openMenu()
+        menuManager.mainVC = self
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
