@@ -1,18 +1,20 @@
 //
-//  SecondTableViewCell.swift
+//  SearchTableViewCell.swift
 //  Marine Insight iOS
 //
-//  Created by raunek kantharia on 29/04/17.
+//  Created by raunek kantharia on 06/06/17.
 //  Copyright © 2017 marineinsight. All rights reserved.
 //
 
 import UIKit
 
-class SecondTableViewCell: UITableViewCell {
+class SearchTableViewCell: UITableViewCell {
 
-    @IBOutlet var imgView: UIImageView!
-    @IBOutlet var postTitle: UILabel!
    
+    
+    @IBOutlet var postTitle: UILabel!
+    
+ 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,5 +25,7 @@ class SecondTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
     
 }

@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UIWebViewDelegate, UIScrollViewDelegate{
 
     
     @IBOutlet var webView: UIWebView!
     @IBOutlet var titleLabel: UILabel!
+    var scrollView: UIScrollView!
+    
+    @IBOutlet var bannerAdDetail: GADBannerView!
     
     @IBAction func backButtonPressed(_ sender: Any) {
            self.dismiss(animated: true, completion: nil)
@@ -40,11 +44,25 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let request = GADRequest()
+        request.testDevices = [kGADSimulatorID]
+        bannerAdDetail.adUnitID = "ca-app-pub-3904893075452390/1951730882"
+        bannerAdDetail.rootViewController = self
+        bannerAdDetail.load(request)
         titleLabel.text = detailTitle
         authorLabel.text = author! + authorName!
-      //webView.loadRequest(URLRequest(url: URL(string:url!)!))
+//        webView.scrollView.delegate = self
+//        webView.scrollView.alwaysBounceHorizontal = false
+        webView.scrollView.showsHorizontalScrollIndicator = false
+        webView.loadRequest(URLRequest(url: URL(string:url!)!))
         webView.loadHTMLString(detailContent!, baseURL: nil)
-
+       // webView.scrollView.sizeToFit()
            }
+      func scrollViewDidScroll(scrollView: UIScrollView) {
+        if (scrollView.contentOffset.x > 0){
+            let horOffset = CGPoint(x: 0, y: scrollView.contentOffset.y)
+            scrollView.setContentOffset(horOffset, animated: true)
+        }
+    }
 
 }

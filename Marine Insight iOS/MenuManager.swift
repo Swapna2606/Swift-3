@@ -12,8 +12,8 @@ class MenuManager: NSObject, UITableViewDelegate, UITableViewDataSource{
     
     let blackView = UIView()
     let menuTableView = UITableView()
-    let arrayOfCategories = ["News", "Videos"]
-    let arrayOfSlugs = ["shipping-news", "videos"]
+    let arrayOfCategories = ["News", "Videos", "Marine Tech", "Navigation", "Guidelines", "Naval Arch", "Safety", "Careers", "Life At Sea", "Piracy", "Real Life Incidents"]
+    let arrayOfSlugs = ["shipping-news", "videos", "tech", "marine-navigation", "guidelines", "naval-architecture", "marine-safety", "careers-2", "life-at-sea", "marine-piracy-marine", "case-studies"]
     var mainVC: ViewController?
     
     public func openMenu(){
@@ -23,7 +23,7 @@ class MenuManager: NSObject, UITableViewDelegate, UITableViewDataSource{
         blackView.backgroundColor = UIColor(white: 0, alpha: 0.5)
         blackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissMenu)))
         
-        let heightofMenuTableView:CGFloat = 100
+        let heightofMenuTableView:CGFloat = 550
             
         let positionofMenu = window.frame.height - heightofMenuTableView
             
@@ -40,7 +40,7 @@ class MenuManager: NSObject, UITableViewDelegate, UITableViewDataSource{
         }
     }
     
-    public func dismissMenu(){
+    @objc public func dismissMenu(){
         
         UIView.animate(withDuration: 0.5, animations: {
             self.blackView.alpha = 0
