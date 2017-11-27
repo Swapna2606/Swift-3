@@ -30,6 +30,10 @@
 		11DBFE361EAA26FE004814F2 /* Marine_Insight_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DBFE351EAA26FE004814F2 /* Marine_Insight_iOSUITests.swift */; };
 		12D6B1594E95DCD30ED42A4D /* Pods_Marine_Insight_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67DED445BB8BA05AE7A3DE13 /* Pods_Marine_Insight_iOSUITests.framework */; };
 		528D9B09541D8EDEE23CC87B /* Pods_Marine_Insight_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1830EBD78675D932F667C270 /* Pods_Marine_Insight_iOS.framework */; };
+		938591A31FBACD73007CFA25 /* OffDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938591A21FBACD73007CFA25 /* OffDetailViewController.swift */; };
+		93ABCEE61FB9BD0800E020CB /* OfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ABCEE51FB9BD0800E020CB /* OfflineViewController.swift */; };
+		93ABCEE81FB9D0EE00E020CB /* SaveArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ABCEE71FB9D0EE00E020CB /* SaveArticle.swift */; };
+		93B5A5C41FCC44BC00AE5C62 /* NoInternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B5A5C31FCC44BC00AE5C62 /* NoInternetViewController.swift */; };
 		EBC9457550C646618E159A51 /* Pods_Marine_Insight_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BBBCE4EF71AD0E39156787 /* Pods_Marine_Insight_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +88,10 @@
 		3428D3A7C46E0EE9467FA77B /* Pods-Marine Insight iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marine Insight iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marine Insight iOS/Pods-Marine Insight iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		67DED445BB8BA05AE7A3DE13 /* Pods_Marine_Insight_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marine_Insight_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BBBCE4EF71AD0E39156787 /* Pods_Marine_Insight_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marine_Insight_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		938591A21FBACD73007CFA25 /* OffDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffDetailViewController.swift; sourceTree = "<group>"; };
+		93ABCEE51FB9BD0800E020CB /* OfflineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineViewController.swift; sourceTree = "<group>"; };
+		93ABCEE71FB9D0EE00E020CB /* SaveArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveArticle.swift; sourceTree = "<group>"; };
+		93B5A5C31FCC44BC00AE5C62 /* NoInternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetViewController.swift; sourceTree = "<group>"; };
 		C63146E6082910AFE73E4207 /* Pods-Marine Insight iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marine Insight iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marine Insight iOSTests/Pods-Marine Insight iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD39175A0C965D7A287AAD28 /* Pods-Marine Insight iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marine Insight iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marine Insight iOS/Pods-Marine Insight iOS.release.xcconfig"; sourceTree = "<group>"; };
 		E447231D4E356B701A13166E /* Pods-Marine Insight iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marine Insight iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marine Insight iOSUITests/Pods-Marine Insight iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +170,10 @@
 				119E575C1EB8B365007B5F17 /* MenuViewCell.swift */,
 				1180A0421EE6D2AD008D9EB7 /* SearchViewController.swift */,
 				1180A0441EE6E297008D9EB7 /* SearchTableViewCell.swift */,
+				93ABCEE51FB9BD0800E020CB /* OfflineViewController.swift */,
+				93ABCEE71FB9D0EE00E020CB /* SaveArticle.swift */,
+				938591A21FBACD73007CFA25 /* OffDetailViewController.swift */,
+				93B5A5C31FCC44BC00AE5C62 /* NoInternetViewController.swift */,
 			);
 			path = "Marine Insight iOS";
 			sourceTree = "<group>";
@@ -497,9 +509,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				118D99DF1EB5049900931740 /* FirstTableViewCell.swift in Sources */,
+				93ABCEE61FB9BD0800E020CB /* OfflineViewController.swift in Sources */,
+				938591A31FBACD73007CFA25 /* OffDetailViewController.swift in Sources */,
 				1180A0431EE6D2AD008D9EB7 /* SearchViewController.swift in Sources */,
 				119E575D1EB8B365007B5F17 /* MenuViewCell.swift in Sources */,
 				113194FB1EB277C000964835 /* Article.swift in Sources */,
+				93ABCEE81FB9D0EE00E020CB /* SaveArticle.swift in Sources */,
 				11DBFE181EAA26FE004814F2 /* ViewController.swift in Sources */,
 				119E57591EB8970D007B5F17 /* MenuManager.swift in Sources */,
 				113194FD1EB30E6000964835 /* DetailViewController.swift in Sources */,
@@ -507,6 +522,7 @@
 				118D99E81EB504E400931740 /* SecondTableViewCell.swift in Sources */,
 				1180A0461EE6E297008D9EB7 /* SearchTableViewCell.swift in Sources */,
 				118D99EB1EB5353000931740 /* ConnectionCheck.swift in Sources */,
+				93B5A5C41FCC44BC00AE5C62 /* NoInternetViewController.swift in Sources */,
 				113194F91EB2762000964835 /* ArticleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

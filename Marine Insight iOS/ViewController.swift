@@ -50,25 +50,49 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
          tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+//        if(currentReachabilityStatus != .notReachable) {
+//          //activityIndicator("Getting Things Onboard...")
+//        let request = GADRequest()
+//            request.testDevices = [kGADSimulatorID]
+//            bannerAd.adUnitID = "ca-app-pub-3904893075452390/1951730882"
+//            bannerAd.rootViewController = self
+//            bannerAd.load(request)
+//
+//        fetchArticles(fromSouce: source)
+//        refresher = UIRefreshControl()
+//        refresher.attributedTitle = NSAttributedString(string: "Pull to Refresh")
+//        refresher.addTarget(self, action: #selector(ViewController.fetchArticles), for: UIControlEvents.valueChanged)
+//        tableView.addSubview(refresher)
+//        }
+//
+//        else{
+//            print("Not Connected")
+//            let noInternetVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "noInternet") as! NoInternetViewController
+//            self.present(noInternetVC, animated: true, completion: nil)
+//            print("something is wrong")
+//        }
+    }
+    override func viewDidAppear(_ animated: Bool) {
         if(currentReachabilityStatus != .notReachable) {
-          //activityIndicator("Getting Things Onboard...")
-        let request = GADRequest()
+            //activityIndicator("Getting Things Onboard...")
+            let request = GADRequest()
             request.testDevices = [kGADSimulatorID]
             bannerAd.adUnitID = "ca-app-pub-3904893075452390/1951730882"
             bannerAd.rootViewController = self
             bannerAd.load(request)
-
-        fetchArticles(fromSouce: source)
-        refresher = UIRefreshControl()
-        refresher.attributedTitle = NSAttributedString(string: "Pull to Refresh")
-        refresher.addTarget(self, action: #selector(ViewController.fetchArticles), for: UIControlEvents.valueChanged)
-        tableView.addSubview(refresher)
+            
+            fetchArticles(fromSouce: source)
+            refresher = UIRefreshControl()
+            refresher.attributedTitle = NSAttributedString(string: "Pull to Refresh")
+            refresher.addTarget(self, action: #selector(ViewController.fetchArticles), for: UIControlEvents.valueChanged)
+            tableView.addSubview(refresher)
         }
-        
+            
         else{
             print("Not Connected")
-            tableView.separatorStyle = UITableViewCellSeparatorStyle.none
-            self.showAlert(title: "No Internet Connection", message: "Please check your network connection and try again.")
+            let noInternetVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "noInternet") as! NoInternetViewController
+            self.present(noInternetVC, animated: true, completion: nil)
+            print("something is wrong")
         }
     }
     
@@ -213,7 +237,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let webVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detail") as! DetailViewController
         let contentToParse = self.articles?[indexPath.item].content
         let contentToDisplay = NSString(format: "%@%@%@", self, "<style type='text/css'>img {max-width:100%%;height:auto !important;width:auto !important;} iframe {width: 300px; height: auto;}img.wp-image-42223{display:none;} .wp-caption-text{font-size:5px;}</style>", contentToParse! ) as String
-        webVC.detailTitle = self.articles?[indexPath.item].title
+        webVC.detailTitle = self.articles?[indexPath.item].title?.html2AttributedString?.string
         webVC.authorName = self.articles?[indexPath.item].author
         webVC.url = self.articles?[indexPath.item].url
         webVC.detailContent = contentToDisplay

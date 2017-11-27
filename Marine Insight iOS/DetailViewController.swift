@@ -41,6 +41,24 @@ class DetailViewController: UIViewController, UIWebViewDelegate, UIScrollViewDel
         self.present(shareVC, animated: true, completion: nil)
     }
     
+    @IBAction func saveForOffline(_ sender: Any) {
+        // create the alert
+        let alert = UIAlertController(title: "Save For Offline", message: "Do you want to save: \(String(describing: detailTitle!))", preferredStyle: UIAlertControllerStyle.alert)
+        
+        // add the actions (buttons)
+        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler: { action in
+            let saveSingleArticle = SaveArticle(saveTitle: self.detailTitle!, saveContent: self.detailContent!, saveAuthor: self.authorName!, saveUrl: self.url!)
+            let encodedData = NSKeyedArchiver.archivedData(withRootObject: saveSingleArticle)
+            UserDefaults.standard.set(encodedData, forKey: "newSave")
+            print("saved")
+          
+            
+        }))
+        alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.cancel, handler: nil))
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,17 +69,18 @@ class DetailViewController: UIViewController, UIWebViewDelegate, UIScrollViewDel
         bannerAdDetail.load(request)
         titleLabel.text = detailTitle
         authorLabel.text = author! + authorName!
-//        webView.scrollView.delegate = self
-//        webView.scrollView.alwaysBounceHorizontal = false
-        webView.scrollView.showsHorizontalScrollIndicator = false
         webView.loadRequest(URLRequest(url: URL(string:url!)!))
         webView.loadHTMLString(detailContent!, baseURL: nil)
-       // webView.scrollView.sizeToFit()
-           }
-      func scrollViewDidScroll(scrollView: UIScrollView) {
+        webView.scrollView.delegate = self
+}
+    
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        self.webView.scrollView.showsHorizontalScrollIndicator = false
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if (scrollView.contentOffset.x > 0){
-            let horOffset = CGPoint(x: 0, y: scrollView.contentOffset.y)
-            scrollView.setContentOffset(horOffset, animated: true)
+            scrollView.contentOffset = CGPoint(x: 0, y: scrollView.contentOffset.y)
         }
     }
 
