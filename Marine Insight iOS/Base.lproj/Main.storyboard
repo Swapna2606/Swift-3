@@ -228,21 +228,21 @@
                             <constraint firstAttribute="trailing" secondItem="yT9-Ru-7MZ" secondAttribute="trailing" id="5DG-Ww-Qr3"/>
                             <constraint firstItem="ZMn-1L-OsI" firstAttribute="top" secondItem="eHe-cU-Oy1" secondAttribute="bottom" id="5Qe-GO-yk9"/>
                             <constraint firstAttribute="trailing" secondItem="2yX-Pm-BSS" secondAttribute="trailing" id="ETr-uC-GPJ"/>
-                            <constraint firstItem="IMi-oo-fsN" firstAttribute="leading" secondItem="4iq-J8-VPc" secondAttribute="leading" constant="10" id="Fvw-qs-Crx"/>
+                            <constraint firstItem="IMi-oo-fsN" firstAttribute="leading" relation="lessThanOrEqual" secondItem="4iq-J8-VPc" secondAttribute="leading" constant="10" id="Fvw-qs-Crx"/>
                             <constraint firstAttribute="trailing" secondItem="aGh-1g-vD7" secondAttribute="trailing" id="JUS-x5-lOn"/>
-                            <constraint firstAttribute="trailing" secondItem="IMi-oo-fsN" secondAttribute="trailing" constant="10" id="MFm-Ar-GHM"/>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="IMi-oo-fsN" secondAttribute="trailing" constant="10" id="MFm-Ar-GHM"/>
                             <constraint firstItem="V11-ci-rtM" firstAttribute="top" secondItem="2yX-Pm-BSS" secondAttribute="bottom" constant="8" id="Oqf-IF-HNt"/>
                             <constraint firstItem="aGh-1g-vD7" firstAttribute="top" secondItem="IMi-oo-fsN" secondAttribute="bottom" constant="7.5" id="Q7d-Hc-hmW"/>
                             <constraint firstItem="aGh-1g-vD7" firstAttribute="centerX" secondItem="4iq-J8-VPc" secondAttribute="centerX" id="ZRa-jg-EvA"/>
                             <constraint firstItem="yT9-Ru-7MZ" firstAttribute="leading" secondItem="4iq-J8-VPc" secondAttribute="leading" id="dlm-rv-Ccl"/>
-                            <constraint firstItem="V11-ci-rtM" firstAttribute="leading" secondItem="4iq-J8-VPc" secondAttribute="leading" constant="10" id="eIG-ou-j7D"/>
+                            <constraint firstItem="V11-ci-rtM" firstAttribute="leading" relation="lessThanOrEqual" secondItem="4iq-J8-VPc" secondAttribute="leading" constant="10" id="eIG-ou-j7D"/>
                             <constraint firstItem="IMi-oo-fsN" firstAttribute="top" secondItem="V11-ci-rtM" secondAttribute="bottom" constant="5" id="jcs-V8-3Tg"/>
                             <constraint firstItem="2yX-Pm-BSS" firstAttribute="top" secondItem="15d-jx-X6f" secondAttribute="bottom" id="mNa-2g-Znh"/>
                             <constraint firstItem="aGh-1g-vD7" firstAttribute="leading" secondItem="4iq-J8-VPc" secondAttribute="leading" id="nvE-oh-R88"/>
                             <constraint firstItem="eHe-cU-Oy1" firstAttribute="centerX" secondItem="4iq-J8-VPc" secondAttribute="centerX" id="oVD-Na-tKE"/>
                             <constraint firstItem="yT9-Ru-7MZ" firstAttribute="top" secondItem="4iq-J8-VPc" secondAttribute="top" id="or3-6h-V8X"/>
                             <constraint firstItem="2yX-Pm-BSS" firstAttribute="leading" secondItem="4iq-J8-VPc" secondAttribute="leading" id="rGY-uj-6xU"/>
-                            <constraint firstAttribute="trailing" secondItem="V11-ci-rtM" secondAttribute="trailing" constant="10" id="vxr-iE-1zd"/>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="V11-ci-rtM" secondAttribute="trailing" constant="10" id="vxr-iE-1zd"/>
                         </constraints>
                     </view>
                     <connections>
@@ -300,7 +300,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="wUr-wt-2Av" secondAttribute="trailing" constant="16" id="N6p-cP-K8m"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="wUr-wt-2Av" secondAttribute="trailing" constant="16" id="N6p-cP-K8m"/>
                                     <constraint firstAttribute="trailing" secondItem="Q8T-ON-mxs" secondAttribute="trailing" constant="16" id="ZOA-WC-JFz"/>
                                     <constraint firstItem="Q8T-ON-mxs" firstAttribute="top" secondItem="wUr-wt-2Av" secondAttribute="bottom" constant="98.5" id="kew-kt-l8O"/>
                                     <constraint firstItem="wUr-wt-2Av" firstAttribute="centerX" secondItem="vfi-W6-yR4" secondAttribute="centerX" id="pH2-cI-5Qt"/>
@@ -482,23 +482,22 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dr1-b0-htx">
-                                                    <rect key="frame" x="10" y="16" width="355" height="12"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9x-Ke-pxR">
+                                                    <rect key="frame" x="25" y="16" width="325" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Dr1-b0-htx" secondAttribute="trailing" constant="10" id="8ma-8I-5hI"/>
-                                                <constraint firstItem="Dr1-b0-htx" firstAttribute="leading" relation="lessThanOrEqual" secondItem="gQt-7n-IyA" secondAttribute="leading" constant="10" id="aLl-lN-ZwH"/>
-                                                <constraint firstItem="Dr1-b0-htx" firstAttribute="centerY" secondItem="gQt-7n-IyA" secondAttribute="centerY" id="fEZ-Sn-sf7"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Dr1-b0-htx" secondAttribute="bottom" constant="5" id="lCf-fl-5Yw"/>
-                                                <constraint firstItem="Dr1-b0-htx" firstAttribute="top" secondItem="gQt-7n-IyA" secondAttribute="topMargin" constant="5" id="qH6-Mu-9UX"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="P9x-Ke-pxR" secondAttribute="bottom" constant="5" id="J1D-cz-TXX"/>
+                                                <constraint firstItem="P9x-Ke-pxR" firstAttribute="leading" secondItem="gQt-7n-IyA" secondAttribute="leadingMargin" constant="10" id="Ktc-Ln-bfS"/>
+                                                <constraint firstItem="P9x-Ke-pxR" firstAttribute="top" secondItem="gQt-7n-IyA" secondAttribute="topMargin" constant="5" id="NDm-9i-mdI"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="P9x-Ke-pxR" secondAttribute="trailing" constant="10" id="jxw-Lt-EsS"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="postTitle" destination="Dr1-b0-htx" id="Pen-Ti-Y16"/>
+                                            <outlet property="postTitle" destination="P9x-Ke-pxR" id="io9-lD-QJ9"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

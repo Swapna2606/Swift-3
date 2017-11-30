@@ -72,14 +72,7 @@ class MenuManager: NSObject, UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if indexPath.row == arrayOfCategories.count{
-//            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//            if let newViewController = storyBoard.instantiateViewController(withIdentifier: "OfflineStoryboard") as? OfflineViewController{
-//                mainVC?.present(newViewController, animated: true, completion: nil)
-//            }
-//        }
-//        else{
-     //   print(indexPath.item)
+
         if let vc = mainVC{
         vc.source = arrayOfSlugs [indexPath.item]
         vc.fetchArticles(fromSouce: arrayOfSlugs[indexPath.item])

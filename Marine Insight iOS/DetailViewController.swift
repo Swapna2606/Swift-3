@@ -49,25 +49,25 @@ class DetailViewController: UIViewController, UIWebViewDelegate, UIScrollViewDel
         // add the actions (buttons)
         alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler: { action in
             let saveSingleArticle = SaveArticle(saveTitle: self.detailTitle!, saveContent: self.detailContent!, saveAuthor: self.authorName!, saveUrl: self.url!)
-            var encodedData = UserDefaults.standard.object(forKey: "newSave") as? NSData
-            var savedArticlesArray = NSKeyedUnarchiver.unarchiveObject(with: encodedData! as Data) as? [SaveArticle]
-            if savedArticlesArray?.count != 0{
-                var tempArray: [AnyObject] = savedArticlesArray as! [AnyObject]
+            var encodedData = UserDefaults.standard.data(forKey: "newSave")
+            var savedArticlesArray = (NSKeyedUnarchiver.unarchiveObject(with: encodedData!) as? [SaveArticle])!
+            if savedArticlesArray.count != 0{
+                var tempArray: [AnyObject] = (savedArticlesArray as [AnyObject])
                 tempArray.append(saveSingleArticle)
-                encodedData = NSKeyedArchiver.archivedData(withRootObject: tempArray) as NSData
-                print("Updated Array")
-                print(savedArticlesArray?.count)
+                encodedData = NSKeyedArchiver.archivedData(withRootObject: tempArray)
+//                print("Updated Array")
+//                print(savedArticlesArray?.count)
                 
             }
             else{
-                savedArticlesArray?.append(saveSingleArticle)
-                encodedData = NSKeyedArchiver.archivedData(withRootObject: savedArticlesArray) as NSData
+                savedArticlesArray.append(saveSingleArticle)
+                encodedData = NSKeyedArchiver.archivedData(withRootObject: savedArticlesArray)
                 print("Saved 1st article")
             }
             UserDefaults.standard.set(encodedData, forKey: "newSave")
             UserDefaults.standard.synchronize()
 
-            print(savedArticlesArray?.count)
+           // print(savedArticlesArray?.count)
           //self.loadArtilce() - for testing the saved userdefaults
           
             

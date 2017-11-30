@@ -17,7 +17,7 @@ class OfflineViewController: UIViewController, UITableViewDelegate, UITableViewD
     var offAuthor:String = ""
     var offUrl:String = ""
     var saveArticlesArray = [SaveArticle]()
-    var encodedData:NSData? = nil
+    var encodedData:Data? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +26,12 @@ class OfflineViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        encodedData = UserDefaults.standard.object(forKey: "newSave") as? NSData
-        saveArticlesArray = (NSKeyedUnarchiver.unarchiveObject(with: encodedData! as Data) as? [SaveArticle])!
+     //   encodedData = UserDefaults.standard.object(forKey: "newSave") as? NSData
+        encodedData = UserDefaults.standard.data(forKey: "newSave")
+        saveArticlesArray = (NSKeyedUnarchiver.unarchiveObject(with: encodedData!) as? [SaveArticle])!
+        if saveArticlesArray.count == 0 {
+            offTableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        }
         offTableView.reloadData()
     }
  
@@ -71,7 +75,8 @@ class OfflineViewController: UIViewController, UITableViewDelegate, UITableViewD
                 tableView.reloadData()
             }
             
-            encodedData = NSKeyedArchiver.archivedData(withRootObject: saveArticlesArray) as NSData
+           // encodedData = NSKeyedArchiver.archivedData(withRootObject: saveArticlesArray) as NSData
+            encodedData = NSKeyedArchiver.archivedData(withRootObject: saveArticlesArray)
             UserDefaults.standard.set(encodedData, forKey: "newSave")
             UserDefaults.standard.synchronize()
         }
