@@ -30,6 +30,7 @@
 		11DBFE361EAA26FE004814F2 /* Marine_Insight_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DBFE351EAA26FE004814F2 /* Marine_Insight_iOSUITests.swift */; };
 		12D6B1594E95DCD30ED42A4D /* Pods_Marine_Insight_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67DED445BB8BA05AE7A3DE13 /* Pods_Marine_Insight_iOSUITests.framework */; };
 		528D9B09541D8EDEE23CC87B /* Pods_Marine_Insight_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1830EBD78675D932F667C270 /* Pods_Marine_Insight_iOS.framework */; };
+		93467DF41FCFD074000EDD08 /* OfflineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93467DF31FCFD074000EDD08 /* OfflineTableViewCell.swift */; };
 		938591A31FBACD73007CFA25 /* OffDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938591A21FBACD73007CFA25 /* OffDetailViewController.swift */; };
 		93ABCEE61FB9BD0800E020CB /* OfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ABCEE51FB9BD0800E020CB /* OfflineViewController.swift */; };
 		93ABCEE81FB9D0EE00E020CB /* SaveArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ABCEE71FB9D0EE00E020CB /* SaveArticle.swift */; };
@@ -88,6 +89,7 @@
 		3428D3A7C46E0EE9467FA77B /* Pods-Marine Insight iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marine Insight iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marine Insight iOS/Pods-Marine Insight iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		67DED445BB8BA05AE7A3DE13 /* Pods_Marine_Insight_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marine_Insight_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BBBCE4EF71AD0E39156787 /* Pods_Marine_Insight_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marine_Insight_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93467DF31FCFD074000EDD08 /* OfflineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineTableViewCell.swift; sourceTree = "<group>"; };
 		938591A21FBACD73007CFA25 /* OffDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffDetailViewController.swift; sourceTree = "<group>"; };
 		93ABCEE51FB9BD0800E020CB /* OfflineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineViewController.swift; sourceTree = "<group>"; };
 		93ABCEE71FB9D0EE00E020CB /* SaveArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveArticle.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				119E575C1EB8B365007B5F17 /* MenuViewCell.swift */,
 				1180A0421EE6D2AD008D9EB7 /* SearchViewController.swift */,
 				1180A0441EE6E297008D9EB7 /* SearchTableViewCell.swift */,
+				93467DF31FCFD074000EDD08 /* OfflineTableViewCell.swift */,
 				93ABCEE51FB9BD0800E020CB /* OfflineViewController.swift */,
 				93ABCEE71FB9D0EE00E020CB /* SaveArticle.swift */,
 				938591A21FBACD73007CFA25 /* OffDetailViewController.swift */,
@@ -516,6 +519,7 @@
 				113194FB1EB277C000964835 /* Article.swift in Sources */,
 				93ABCEE81FB9D0EE00E020CB /* SaveArticle.swift in Sources */,
 				11DBFE181EAA26FE004814F2 /* ViewController.swift in Sources */,
+				93467DF41FCFD074000EDD08 /* OfflineTableViewCell.swift in Sources */,
 				119E57591EB8970D007B5F17 /* MenuManager.swift in Sources */,
 				113194FD1EB30E6000964835 /* DetailViewController.swift in Sources */,
 				11DBFE161EAA26FE004814F2 /* AppDelegate.swift in Sources */,

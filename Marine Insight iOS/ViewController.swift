@@ -50,7 +50,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
          tableView.separatorStyle = UITableViewCellSeparatorStyle.none
-//        if(currentReachabilityStatus != .notReachable) {
+       if(currentReachabilityStatus != .notReachable) {
+        fetchArticles(fromSouce: source)
+        refresher = UIRefreshControl()
+        refresher.attributedTitle = NSAttributedString(string: "Pull to Refresh")
+        refresher.addTarget(self, action: #selector(ViewController.fetchArticles), for: UIControlEvents.valueChanged)
+        tableView.addSubview(refresher)
+        
+        }
 //          //activityIndicator("Getting Things Onboard...")
 //        let request = GADRequest()
 //            request.testDevices = [kGADSimulatorID]
@@ -79,13 +86,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             request.testDevices = [kGADSimulatorID]
             bannerAd.adUnitID = "ca-app-pub-3904893075452390/1951730882"
             bannerAd.rootViewController = self
-            bannerAd.load(request)
-            
-            fetchArticles(fromSouce: source)
-            refresher = UIRefreshControl()
-            refresher.attributedTitle = NSAttributedString(string: "Pull to Refresh")
-            refresher.addTarget(self, action: #selector(ViewController.fetchArticles), for: UIControlEvents.valueChanged)
-            tableView.addSubview(refresher)
+            bannerAd.load(request)       
         }
             
         else{

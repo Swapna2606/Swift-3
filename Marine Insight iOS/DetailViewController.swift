@@ -29,7 +29,8 @@ class DetailViewController: UIViewController, UIWebViewDelegate, UIScrollViewDel
     var authorName:String?
     let marineInsight:String? = " - Marine Insight"
     let author:String? = "Author: "
-    
+    var savedArticlesArray : [SaveArticle] = []
+  
     @IBAction func shareActivity(_ sender: Any) {
         
         let shareTitle:String = detailTitle! + marineInsight! as String
@@ -48,9 +49,26 @@ class DetailViewController: UIViewController, UIWebViewDelegate, UIScrollViewDel
         // add the actions (buttons)
         alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler: { action in
             let saveSingleArticle = SaveArticle(saveTitle: self.detailTitle!, saveContent: self.detailContent!, saveAuthor: self.authorName!, saveUrl: self.url!)
-            let encodedData = NSKeyedArchiver.archivedData(withRootObject: saveSingleArticle)
+            var encodedData = UserDefaults.standard.object(forKey: "newSave") as? NSData
+            var savedArticlesArray = NSKeyedUnarchiver.unarchiveObject(with: encodedData! as Data) as? [SaveArticle]
+            if savedArticlesArray?.count != 0{
+                var tempArray: [AnyObject] = savedArticlesArray as! [AnyObject]
+                tempArray.append(saveSingleArticle)
+                encodedData = NSKeyedArchiver.archivedData(withRootObject: tempArray) as NSData
+                print("Updated Array")
+                print(savedArticlesArray?.count)
+                
+            }
+            else{
+                savedArticlesArray?.append(saveSingleArticle)
+                encodedData = NSKeyedArchiver.archivedData(withRootObject: savedArticlesArray) as NSData
+                print("Saved 1st article")
+            }
             UserDefaults.standard.set(encodedData, forKey: "newSave")
-            print("saved")
+            UserDefaults.standard.synchronize()
+
+            print(savedArticlesArray?.count)
+          //self.loadArtilce() - for testing the saved userdefaults
           
             
         }))
@@ -59,6 +77,27 @@ class DetailViewController: UIViewController, UIWebViewDelegate, UIScrollViewDel
         // show the alert
         self.present(alert, animated: true, completion: nil)
     }
+    
+/*    func loadArtilce() {
+      
+        guard let encodedData = UserDefaults.standard.object(forKey: "newSave") as? NSData else {
+            print("'places' not found in UserDefaults")
+            return
+        }
+        
+        guard let saveArticlesArray = NSKeyedUnarchiver.unarchiveObject(with: encodedData as Data) as? [SaveArticle] else {
+            print("Could not unarchive from placesData")
+            return
+        }
+        
+        for article in saveArticlesArray {
+            print("")
+            print("title: \(article.saveTitle)")
+            print("content: \(article.saveContent)")
+            print("url: \(article.saveUrl)")
+        }
+
+    }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()

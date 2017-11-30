@@ -349,20 +349,54 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Your Saved Stories" id="V6A-aS-AnE"/>
+                                    <navigationItem title="Your Saved Stories" id="V6A-aS-AnE">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" width="1" id="T0U-4M-Um4">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <segue destination="cs8-zD-rux" kind="show" id="xjH-ol-EFC"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qbz-Gm-7YO">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OfflineCell" id="vKT-WW-Y3i">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OfflineCell" id="vKT-WW-Y3i" customClass="OfflineTableViewCell" customModule="Marine_Insight_iOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vKT-WW-Y3i" id="dOu-AU-zP4">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Saved" translatesAutoresizingMaskIntoConstraints="NO" id="iMQ-AI-TYx">
+                                                    <rect key="frame" x="10" y="-16" width="75" height="75.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="75" id="71D-YN-sFH"/>
+                                                        <constraint firstAttribute="height" constant="75" id="Qpl-gS-PaA"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offline Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdv-Qc-5Ot">
+                                                    <rect key="frame" x="95" y="-16" width="270" height="75.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="tdv-Qc-5Ot" secondAttribute="trailing" constant="10" id="29c-Cg-jpA"/>
+                                                <constraint firstItem="tdv-Qc-5Ot" firstAttribute="leading" secondItem="iMQ-AI-TYx" secondAttribute="trailing" constant="10" id="9P8-qb-8IU"/>
+                                                <constraint firstItem="tdv-Qc-5Ot" firstAttribute="centerY" secondItem="dOu-AU-zP4" secondAttribute="centerY" id="Aor-ub-lPy"/>
+                                                <constraint firstItem="iMQ-AI-TYx" firstAttribute="leading" secondItem="dOu-AU-zP4" secondAttribute="leading" constant="10" id="CS0-oF-RYQ"/>
+                                                <constraint firstItem="iMQ-AI-TYx" firstAttribute="top" secondItem="tdv-Qc-5Ot" secondAttribute="top" id="NIw-i9-qAA"/>
+                                                <constraint firstItem="iMQ-AI-TYx" firstAttribute="centerY" secondItem="dOu-AU-zP4" secondAttribute="centerY" id="wAi-La-FPj"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="offImage" destination="iMQ-AI-TYx" id="u7S-n8-z3p"/>
+                                            <outlet property="offTitle" destination="tdv-Qc-5Ot" id="MTU-Z6-Jem"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -389,7 +423,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNr-Ha-rk9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="193" y="879"/>
+            <point key="canvasLocation" x="192.80000000000001" y="878.41079460269873"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="v32-vu-CWk">
@@ -601,6 +635,7 @@
     </scenes>
     <resources>
         <image name="Menu" width="25" height="25"/>
+        <image name="Saved" width="256" height="256"/>
         <image name="Share" width="25" height="25"/>
     </resources>
     <color key="tintColor" red="0.2384154201" green="0.67600029709999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
