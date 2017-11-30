@@ -57,10 +57,10 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="yrM-K1-ef3" firstAttribute="centerY" secondItem="U98-Y3-NKF" secondAttribute="centerY" id="7TN-xh-rvK"/>
-                                                <constraint firstItem="bWs-fb-nuV" firstAttribute="leading" secondItem="yrM-K1-ef3" secondAttribute="trailing" constant="10" id="9kC-Ay-UJl"/>
-                                                <constraint firstItem="yrM-K1-ef3" firstAttribute="leading" secondItem="U98-Y3-NKF" secondAttribute="leading" constant="10" id="FtU-zn-dQ1"/>
+                                                <constraint firstItem="bWs-fb-nuV" firstAttribute="left" relation="lessThanOrEqual" secondItem="yrM-K1-ef3" secondAttribute="right" constant="10" id="9kC-Ay-UJl"/>
+                                                <constraint firstItem="yrM-K1-ef3" firstAttribute="leading" relation="lessThanOrEqual" secondItem="U98-Y3-NKF" secondAttribute="leading" constant="10" id="FtU-zn-dQ1"/>
                                                 <constraint firstItem="bWs-fb-nuV" firstAttribute="centerY" secondItem="U98-Y3-NKF" secondAttribute="centerY" id="HYN-fs-647"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="bWs-fb-nuV" secondAttribute="trailing" constant="10" id="LvE-2J-hsw"/>
+                                                <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="bWs-fb-nuV" secondAttribute="trailing" constant="10" id="LvE-2J-hsw"/>
                                                 <constraint firstItem="bWs-fb-nuV" firstAttribute="top" secondItem="yrM-K1-ef3" secondAttribute="top" id="gmd-NC-QIL"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -418,7 +418,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="qbz-Gm-7YO" id="m5v-s4-4Ro"/>
+                        <outlet property="offTableView" destination="qbz-Gm-7YO" id="FP7-l9-n5W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNr-Ha-rk9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -483,18 +483,18 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dr1-b0-htx">
-                                                    <rect key="frame" x="23" y="16" width="329" height="12"/>
+                                                    <rect key="frame" x="10" y="16" width="355" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Dr1-b0-htx" firstAttribute="top" secondItem="gQt-7n-IyA" secondAttribute="topMargin" constant="5" id="VAY-ad-wDh"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Dr1-b0-htx" secondAttribute="trailing" constant="8" id="gwH-ue-sxA"/>
-                                                <constraint firstItem="Dr1-b0-htx" firstAttribute="leading" secondItem="gQt-7n-IyA" secondAttribute="leadingMargin" constant="8" id="kwX-hu-tcE"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Dr1-b0-htx" secondAttribute="bottom" constant="5" id="pKf-5g-vdL"/>
-                                                <constraint firstItem="Dr1-b0-htx" firstAttribute="centerX" secondItem="gQt-7n-IyA" secondAttribute="centerX" id="qMg-w4-riT"/>
+                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Dr1-b0-htx" secondAttribute="trailing" constant="10" id="8ma-8I-5hI"/>
+                                                <constraint firstItem="Dr1-b0-htx" firstAttribute="leading" relation="lessThanOrEqual" secondItem="gQt-7n-IyA" secondAttribute="leading" constant="10" id="aLl-lN-ZwH"/>
+                                                <constraint firstItem="Dr1-b0-htx" firstAttribute="centerY" secondItem="gQt-7n-IyA" secondAttribute="centerY" id="fEZ-Sn-sf7"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Dr1-b0-htx" secondAttribute="bottom" constant="5" id="lCf-fl-5Yw"/>
+                                                <constraint firstItem="Dr1-b0-htx" firstAttribute="top" secondItem="gQt-7n-IyA" secondAttribute="topMargin" constant="5" id="qH6-Mu-9UX"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

@@ -10,23 +10,25 @@ import UIKit
 
 class OfflineViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var offTableView: UITableView!
+
     var offTitleLabel:String = ""
     var offContent:String = ""
     var offAuthor:String = ""
     var offUrl:String = ""
     var saveArticlesArray = [SaveArticle]()
+    var encodedData:NSData? = nil
     
-    @IBOutlet weak var titleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let encodedData = UserDefaults.standard.object(forKey: "newSave") as? NSData
-        saveArticlesArray = (NSKeyedUnarchiver.unarchiveObject(with: encodedData! as Data) as? [SaveArticle])!
+       
         //print(saveArticlesArray.count)
     }
     
     override func viewDidAppear(_ animated: Bool) {
-      tableView.reloadData()
+        encodedData = UserDefaults.standard.object(forKey: "newSave") as? NSData
+        saveArticlesArray = (NSKeyedUnarchiver.unarchiveObject(with: encodedData! as Data) as? [SaveArticle])!
+        offTableView.reloadData()
     }
  
     override func didReceiveMemoryWarning() {
@@ -41,10 +43,9 @@ class OfflineViewController: UIViewController, UITableViewDelegate, UITableViewD
         return 80
         
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       let cell = tableView.dequeueReusableCell(withIdentifier: "OfflineCell", for: indexPath) as! OfflineTableViewCell
-       // let cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: "OfflineCell") as! OfflineTableViewCell
-       // cell.textLabel?.text = saveArticlesArray[indexPath.row].saveTitle
        cell.offTitle.text = saveArticlesArray[indexPath.row].saveTitle
         return cell
     }
@@ -59,15 +60,23 @@ class OfflineViewController: UIViewController, UITableViewDelegate, UITableViewD
         self.present(offWebVC, animated: true, completion: nil)
       
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+       
+        if editingStyle == UITableViewCellEditingStyle.delete{
+            saveArticlesArray.remove(at: indexPath.row)
+            DispatchQueue.main.async{
+                print("reached dispacth")
+                //self.offTableView.reloadData()
+                tableView.reloadData()
+            }
+            
+            encodedData = NSKeyedArchiver.archivedData(withRootObject: saveArticlesArray) as NSData
+            UserDefaults.standard.set(encodedData, forKey: "newSave")
+            UserDefaults.standard.synchronize()
+        }
+       
     }
-    */
+
 
 }
