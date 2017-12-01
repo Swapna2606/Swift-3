@@ -32,19 +32,37 @@ class OffDetailViewController: UIViewController, UIWebViewDelegate, UIScrollView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Off Detail Loaded")
-      offTitleLabel.text = offDetailTitle
-        offAuthorLabel.text = "Author: \(String(describing: offAuthName))"
+        //print("Off Detail Loaded")
+        offTitleLabel.text = offDetailTitle
+        offAuthorLabel.text = "Author: \(String(describing: offAuthName!))"
         offWebView.loadRequest(URLRequest(url: URL(string:offUrl!)!))
         offWebView.loadHTMLString(offDetailContent!, baseURL: nil)
         offWebView.scrollView.delegate = self
         offWebView.scrollView.showsHorizontalScrollIndicator = false
-        
+        offWebView.delegate = self
     }
     func webViewDidFinishLoad(_ webView: UIWebView) {
         self.offWebView.scrollView.showsHorizontalScrollIndicator = false
     }
-    
+    // Swift 3
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        switch navigationType {
+        case .linkClicked:
+            // Open links in Safari
+            guard let url = request.url else { return true }
+            
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                // openURL(_:) is deprecated in iOS 10+.
+                UIApplication.shared.openURL(url)
+            }
+            return false
+        default:
+            // Handle other navigation types...
+            return true
+        }
+    }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if (scrollView.contentOffset.x > 0){
             scrollView.contentOffset = CGPoint(x: 0, y: scrollView.contentOffset.y)

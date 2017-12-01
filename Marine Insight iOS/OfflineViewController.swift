@@ -27,12 +27,20 @@ class OfflineViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidAppear(_ animated: Bool) {
      //   encodedData = UserDefaults.standard.object(forKey: "newSave") as? NSData
+    
         encodedData = UserDefaults.standard.data(forKey: "newSave")
+        if encodedData == nil{
+            let alert = UIAlertController(title: "No Saved Stories", message: "You can save an article by clicking SAVE for reading offline", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else{
         saveArticlesArray = (NSKeyedUnarchiver.unarchiveObject(with: encodedData!) as? [SaveArticle])!
         if saveArticlesArray.count == 0 {
             offTableView.separatorStyle = UITableViewCellSeparatorStyle.none
         }
         offTableView.reloadData()
+        }
     }
  
     override func didReceiveMemoryWarning() {
@@ -70,7 +78,7 @@ class OfflineViewController: UIViewController, UITableViewDelegate, UITableViewD
         if editingStyle == UITableViewCellEditingStyle.delete{
             saveArticlesArray.remove(at: indexPath.row)
             DispatchQueue.main.async{
-                print("reached dispacth")
+                //  print("reached dispacth")
                 //self.offTableView.reloadData()
                 tableView.reloadData()
             }

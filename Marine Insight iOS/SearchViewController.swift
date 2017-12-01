@@ -61,8 +61,11 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
         activityIndicator.frame = CGRect(x: 0, y: 0, width: 46, height: 46)
         activityIndicator.startAnimating()
         
-        effectView.addSubview(activityIndicator)
-        effectView.addSubview(strLabel)
+//        effectView.addSubview(activityIndicator)
+//        effectView.addSubview(strLabel)
+//        view.addSubview(effectView)
+        effectView.contentView.addSubview(activityIndicator)
+        effectView.contentView.addSubview(strLabel)
         view.addSubview(effectView)
     }
 
@@ -70,7 +73,6 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
         super.viewDidLoad()
         searchTableView.separatorStyle = UITableViewCellSeparatorStyle.none
         if(currentReachabilityStatus != .notReachable) {
-            
             
             label.center = CGPoint(x: 170, y: 285)
             label.textAlignment = .center
@@ -160,7 +162,7 @@ class SearchViewController: UIViewController, UITableViewDataSource,UITableViewD
         return 1
     }
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        return 80
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.articles?.count ?? 0

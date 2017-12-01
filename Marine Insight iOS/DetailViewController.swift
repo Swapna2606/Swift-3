@@ -29,7 +29,7 @@ class DetailViewController: UIViewController, UIWebViewDelegate, UIScrollViewDel
     var authorName:String?
     let marineInsight:String? = " - Marine Insight"
     let author:String? = "Author: "
-    var savedArticlesArray : [SaveArticle] = []
+  //  var savedArticlesArray : [SaveArticle] = []
   
     @IBAction func shareActivity(_ sender: Any) {
         
@@ -51,6 +51,7 @@ class DetailViewController: UIViewController, UIWebViewDelegate, UIScrollViewDel
             let saveSingleArticle = SaveArticle(saveTitle: self.detailTitle!, saveContent: self.detailContent!, saveAuthor: self.authorName!, saveUrl: self.url!)
             var encodedData = UserDefaults.standard.data(forKey: "newSave")
             var savedArticlesArray = (NSKeyedUnarchiver.unarchiveObject(with: encodedData!) as? [SaveArticle])!
+
             if savedArticlesArray.count != 0{
                 var tempArray: [AnyObject] = (savedArticlesArray as [AnyObject])
                 tempArray.append(saveSingleArticle)
@@ -62,7 +63,7 @@ class DetailViewController: UIViewController, UIWebViewDelegate, UIScrollViewDel
             else{
                 savedArticlesArray.append(saveSingleArticle)
                 encodedData = NSKeyedArchiver.archivedData(withRootObject: savedArticlesArray)
-                print("Saved 1st article")
+                //print("Saved 1st article")
             }
             UserDefaults.standard.set(encodedData, forKey: "newSave")
             UserDefaults.standard.synchronize()
@@ -111,10 +112,30 @@ class DetailViewController: UIViewController, UIWebViewDelegate, UIScrollViewDel
         webView.loadRequest(URLRequest(url: URL(string:url!)!))
         webView.loadHTMLString(detailContent!, baseURL: nil)
         webView.scrollView.delegate = self
+        webView.delegate = self
 }
     
     func webViewDidFinishLoad(_ webView: UIWebView) {
         self.webView.scrollView.showsHorizontalScrollIndicator = false
+    }
+ 
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        switch navigationType {
+        case .linkClicked:
+            // Open links in Safari
+            guard let url = request.url else { return true }
+            
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                // openURL(_:) is deprecated in iOS 10+.
+                UIApplication.shared.openURL(url)
+            }
+            return false
+        default:
+            // Handle other navigation types...
+            return true
+        }
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

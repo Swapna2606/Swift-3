@@ -9,8 +9,6 @@
 import UIKit
 
 class SearchTableViewCell: UITableViewCell {
-
-   
     
     @IBOutlet var postTitle: UILabel!
     

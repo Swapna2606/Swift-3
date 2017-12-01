@@ -235,14 +235,14 @@
                             <constraint firstItem="aGh-1g-vD7" firstAttribute="top" secondItem="IMi-oo-fsN" secondAttribute="bottom" constant="7.5" id="Q7d-Hc-hmW"/>
                             <constraint firstItem="aGh-1g-vD7" firstAttribute="centerX" secondItem="4iq-J8-VPc" secondAttribute="centerX" id="ZRa-jg-EvA"/>
                             <constraint firstItem="yT9-Ru-7MZ" firstAttribute="leading" secondItem="4iq-J8-VPc" secondAttribute="leading" id="dlm-rv-Ccl"/>
-                            <constraint firstItem="V11-ci-rtM" firstAttribute="leading" relation="lessThanOrEqual" secondItem="4iq-J8-VPc" secondAttribute="leading" constant="10" id="eIG-ou-j7D"/>
+                            <constraint firstItem="V11-ci-rtM" firstAttribute="leading" secondItem="4iq-J8-VPc" secondAttribute="leading" constant="10" id="eIG-ou-j7D"/>
                             <constraint firstItem="IMi-oo-fsN" firstAttribute="top" secondItem="V11-ci-rtM" secondAttribute="bottom" constant="5" id="jcs-V8-3Tg"/>
                             <constraint firstItem="2yX-Pm-BSS" firstAttribute="top" secondItem="15d-jx-X6f" secondAttribute="bottom" id="mNa-2g-Znh"/>
                             <constraint firstItem="aGh-1g-vD7" firstAttribute="leading" secondItem="4iq-J8-VPc" secondAttribute="leading" id="nvE-oh-R88"/>
                             <constraint firstItem="eHe-cU-Oy1" firstAttribute="centerX" secondItem="4iq-J8-VPc" secondAttribute="centerX" id="oVD-Na-tKE"/>
                             <constraint firstItem="yT9-Ru-7MZ" firstAttribute="top" secondItem="4iq-J8-VPc" secondAttribute="top" id="or3-6h-V8X"/>
                             <constraint firstItem="2yX-Pm-BSS" firstAttribute="leading" secondItem="4iq-J8-VPc" secondAttribute="leading" id="rGY-uj-6xU"/>
-                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="V11-ci-rtM" secondAttribute="trailing" constant="10" id="vxr-iE-1zd"/>
+                            <constraint firstAttribute="trailing" secondItem="V11-ci-rtM" secondAttribute="trailing" constant="10" id="vxr-iE-1zd"/>
                         </constraints>
                     </view>
                     <connections>
@@ -482,7 +482,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9x-Ke-pxR">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9x-Ke-pxR">
                                                     <rect key="frame" x="25" y="16" width="325" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -634,7 +634,7 @@
     </scenes>
     <resources>
         <image name="Menu" width="25" height="25"/>
-        <image name="Saved" width="256" height="256"/>
+        <image name="Saved" width="128" height="128"/>
         <image name="Share" width="25" height="25"/>
     </resources>
     <color key="tintColor" red="0.2384154201" green="0.67600029709999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
