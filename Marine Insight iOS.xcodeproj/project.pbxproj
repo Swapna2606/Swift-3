@@ -1,0 +1,841 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		113194F91EB2762000964835 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113194F81EB2762000964835 /* ArticleCell.swift */; };
+		113194FB1EB277C000964835 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113194FA1EB277C000964835 /* Article.swift */; };
+		113194FD1EB30E6000964835 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113194FC1EB30E6000964835 /* DetailViewController.swift */; };
+		115756131EEC4E3700D87A1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 115756121EEC4E3700D87A1C /* GoogleService-Info.plist */; };
+		1180A0431EE6D2AD008D9EB7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1180A0421EE6D2AD008D9EB7 /* SearchViewController.swift */; };
+		1180A0461EE6E297008D9EB7 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1180A0441EE6E297008D9EB7 /* SearchTableViewCell.swift */; };
+		118D99DF1EB5049900931740 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118D99DD1EB5049900931740 /* FirstTableViewCell.swift */; };
+		118D99E01EB5049900931740 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118D99DE1EB5049900931740 /* FirstTableViewCell.xib */; };
+		118D99E81EB504E400931740 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118D99E61EB504E400931740 /* SecondTableViewCell.swift */; };
+		118D99E91EB504E400931740 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118D99E71EB504E400931740 /* SecondTableViewCell.xib */; };
+		118D99EB1EB5353000931740 /* ConnectionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118D99EA1EB5353000931740 /* ConnectionCheck.swift */; };
+		119E57591EB8970D007B5F17 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119E57581EB8970D007B5F17 /* MenuManager.swift */; };
+		119E575B1EB8B022007B5F17 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119E575A1EB8B022007B5F17 /* MenuCell.xib */; };
+		119E575D1EB8B365007B5F17 /* MenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119E575C1EB8B365007B5F17 /* MenuViewCell.swift */; };
+		11DBFE161EAA26FE004814F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DBFE151EAA26FE004814F2 /* AppDelegate.swift */; };
+		11DBFE181EAA26FE004814F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DBFE171EAA26FE004814F2 /* ViewController.swift */; };
+		11DBFE1B1EAA26FE004814F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DBFE191EAA26FE004814F2 /* Main.storyboard */; };
+		11DBFE1D1EAA26FE004814F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11DBFE1C1EAA26FE004814F2 /* Assets.xcassets */; };
+		11DBFE201EAA26FE004814F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DBFE1E1EAA26FE004814F2 /* LaunchScreen.storyboard */; };
+		11DBFE2B1EAA26FE004814F2 /* Marine_Insight_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DBFE2A1EAA26FE004814F2 /* Marine_Insight_iOSTests.swift */; };
+		11DBFE361EAA26FE004814F2 /* Marine_Insight_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DBFE351EAA26FE004814F2 /* Marine_Insight_iOSUITests.swift */; };
+		1F82895757D6927A57E62257 /* Pods_Marine_Insight_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 780AA87FB3BEE350D86BE0AB /* Pods_Marine_Insight_iOS.framework */; };
+		52C4F94C142D9F084007F324 /* Pods_Marine_Insight_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983731706BCBBEAFACE249EF /* Pods_Marine_Insight_iOSTests.framework */; };
+		75E1F8EF782771D5260E66DE /* Pods_Marine_Insight_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF59674B8E83130903E7101D /* Pods_Marine_Insight_iOSUITests.framework */; };
+		93467DF41FCFD074000EDD08 /* OfflineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93467DF31FCFD074000EDD08 /* OfflineTableViewCell.swift */; };
+		938591A31FBACD73007CFA25 /* OffDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938591A21FBACD73007CFA25 /* OffDetailViewController.swift */; };
+		93ABCEE61FB9BD0800E020CB /* OfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ABCEE51FB9BD0800E020CB /* OfflineViewController.swift */; };
+		93ABCEE81FB9D0EE00E020CB /* SaveArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ABCEE71FB9D0EE00E020CB /* SaveArticle.swift */; };
+		93B5A5C41FCC44BC00AE5C62 /* NoInternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B5A5C31FCC44BC00AE5C62 /* NoInternetViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11DBFE271EAA26FE004814F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11DBFE0A1EAA26FE004814F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11DBFE111EAA26FE004814F2;
+			remoteInfo = "Marine Insight iOS";
+		};
+		11DBFE321EAA26FE004814F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11DBFE0A1EAA26FE004814F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11DBFE111EAA26FE004814F2;
+			remoteInfo = "Marine Insight iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		113194F81EB2762000964835 /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		113194FA1EB277C000964835 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		113194FC1EB30E6000964835 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		115756121EEC4E3700D87A1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1180A0421EE6D2AD008D9EB7 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		1180A0441EE6E297008D9EB7 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		118D99DD1EB5049900931740 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
+		118D99DE1EB5049900931740 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
+		118D99E61EB504E400931740 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		118D99E71EB504E400931740 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
+		118D99EA1EB5353000931740 /* ConnectionCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionCheck.swift; sourceTree = "<group>"; };
+		119E57581EB8970D007B5F17 /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
+		119E575A1EB8B022007B5F17 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		119E575C1EB8B365007B5F17 /* MenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewCell.swift; sourceTree = "<group>"; };
+		11DBFE121EAA26FE004814F2 /* Marine Insight iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marine Insight iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11DBFE151EAA26FE004814F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11DBFE171EAA26FE004814F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11DBFE1A1EAA26FE004814F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11DBFE1C1EAA26FE004814F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11DBFE1F1EAA26FE004814F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11DBFE211EAA26FE004814F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11DBFE261EAA26FE004814F2 /* Marine Insight iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Marine Insight iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11DBFE2A1EAA26FE004814F2 /* Marine_Insight_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marine_Insight_iOSTests.swift; sourceTree = "<group>"; };
+		11DBFE2C1EAA26FE004814F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11DBFE311EAA26FE004814F2 /* Marine Insight iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Marine Insight iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11DBFE351EAA26FE004814F2 /* Marine_Insight_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marine_Insight_iOSUITests.swift; sourceTree = "<group>"; };
+		11DBFE371EAA26FE004814F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		199F9511CE89F1704C644AF5 /* Pods-Marine Insight iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marine Insight iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marine Insight iOS/Pods-Marine Insight iOS.release.xcconfig"; sourceTree = "<group>"; };
+		394C4B251F7913196EE23A61 /* Pods-Marine Insight iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marine Insight iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marine Insight iOSTests/Pods-Marine Insight iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		42DBB371128D06C604409FE4 /* Pods-Marine Insight iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marine Insight iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marine Insight iOSUITests/Pods-Marine Insight iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4396E0D5C6318ABA2314E458 /* Pods-Marine Insight iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marine Insight iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marine Insight iOSTests/Pods-Marine Insight iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		690512E9CE6712078E4DB531 /* Pods-Marine Insight iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marine Insight iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marine Insight iOS/Pods-Marine Insight iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		780AA87FB3BEE350D86BE0AB /* Pods_Marine_Insight_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marine_Insight_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93467DF31FCFD074000EDD08 /* OfflineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineTableViewCell.swift; sourceTree = "<group>"; };
+		938591A21FBACD73007CFA25 /* OffDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffDetailViewController.swift; sourceTree = "<group>"; };
+		93ABCEE51FB9BD0800E020CB /* OfflineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineViewController.swift; sourceTree = "<group>"; };
+		93ABCEE71FB9D0EE00E020CB /* SaveArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveArticle.swift; sourceTree = "<group>"; };
+		93B5A5C31FCC44BC00AE5C62 /* NoInternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetViewController.swift; sourceTree = "<group>"; };
+		983731706BCBBEAFACE249EF /* Pods_Marine_Insight_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marine_Insight_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF59674B8E83130903E7101D /* Pods_Marine_Insight_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marine_Insight_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A4D4C0ADAF52DDF3B6FE93 /* Pods-Marine Insight iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marine Insight iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marine Insight iOSUITests/Pods-Marine Insight iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11DBFE0F1EAA26FE004814F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F82895757D6927A57E62257 /* Pods_Marine_Insight_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11DBFE231EAA26FE004814F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C4F94C142D9F084007F324 /* Pods_Marine_Insight_iOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11DBFE2E1EAA26FE004814F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E1F8EF782771D5260E66DE /* Pods_Marine_Insight_iOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11DBFE091EAA26FE004814F2 = {
+			isa = PBXGroup;
+			children = (
+				11DBFE141EAA26FE004814F2 /* Marine Insight iOS */,
+				11DBFE291EAA26FE004814F2 /* Marine Insight iOSTests */,
+				11DBFE341EAA26FE004814F2 /* Marine Insight iOSUITests */,
+				11DBFE131EAA26FE004814F2 /* Products */,
+				7A40551CA74826D2B342CB4A /* Pods */,
+				A029528BA1356184DCA1A6E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11DBFE131EAA26FE004814F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11DBFE121EAA26FE004814F2 /* Marine Insight iOS.app */,
+				11DBFE261EAA26FE004814F2 /* Marine Insight iOSTests.xctest */,
+				11DBFE311EAA26FE004814F2 /* Marine Insight iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11DBFE141EAA26FE004814F2 /* Marine Insight iOS */ = {
+			isa = PBXGroup;
+			children = (
+				11DBFE151EAA26FE004814F2 /* AppDelegate.swift */,
+				11DBFE171EAA26FE004814F2 /* ViewController.swift */,
+				11DBFE191EAA26FE004814F2 /* Main.storyboard */,
+				11DBFE1C1EAA26FE004814F2 /* Assets.xcassets */,
+				11DBFE1E1EAA26FE004814F2 /* LaunchScreen.storyboard */,
+				115756121EEC4E3700D87A1C /* GoogleService-Info.plist */,
+				11DBFE211EAA26FE004814F2 /* Info.plist */,
+				113194F81EB2762000964835 /* ArticleCell.swift */,
+				113194FA1EB277C000964835 /* Article.swift */,
+				113194FC1EB30E6000964835 /* DetailViewController.swift */,
+				118D99DD1EB5049900931740 /* FirstTableViewCell.swift */,
+				118D99DE1EB5049900931740 /* FirstTableViewCell.xib */,
+				118D99E61EB504E400931740 /* SecondTableViewCell.swift */,
+				118D99E71EB504E400931740 /* SecondTableViewCell.xib */,
+				118D99EA1EB5353000931740 /* ConnectionCheck.swift */,
+				119E57581EB8970D007B5F17 /* MenuManager.swift */,
+				119E575A1EB8B022007B5F17 /* MenuCell.xib */,
+				119E575C1EB8B365007B5F17 /* MenuViewCell.swift */,
+				1180A0421EE6D2AD008D9EB7 /* SearchViewController.swift */,
+				1180A0441EE6E297008D9EB7 /* SearchTableViewCell.swift */,
+				93467DF31FCFD074000EDD08 /* OfflineTableViewCell.swift */,
+				93ABCEE51FB9BD0800E020CB /* OfflineViewController.swift */,
+				93ABCEE71FB9D0EE00E020CB /* SaveArticle.swift */,
+				938591A21FBACD73007CFA25 /* OffDetailViewController.swift */,
+				93B5A5C31FCC44BC00AE5C62 /* NoInternetViewController.swift */,
+			);
+			path = "Marine Insight iOS";
+			sourceTree = "<group>";
+		};
+		11DBFE291EAA26FE004814F2 /* Marine Insight iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				11DBFE2A1EAA26FE004814F2 /* Marine_Insight_iOSTests.swift */,
+				11DBFE2C1EAA26FE004814F2 /* Info.plist */,
+			);
+			path = "Marine Insight iOSTests";
+			sourceTree = "<group>";
+		};
+		11DBFE341EAA26FE004814F2 /* Marine Insight iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11DBFE351EAA26FE004814F2 /* Marine_Insight_iOSUITests.swift */,
+				11DBFE371EAA26FE004814F2 /* Info.plist */,
+			);
+			path = "Marine Insight iOSUITests";
+			sourceTree = "<group>";
+		};
+		7A40551CA74826D2B342CB4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				690512E9CE6712078E4DB531 /* Pods-Marine Insight iOS.debug.xcconfig */,
+				199F9511CE89F1704C644AF5 /* Pods-Marine Insight iOS.release.xcconfig */,
+				394C4B251F7913196EE23A61 /* Pods-Marine Insight iOSTests.debug.xcconfig */,
+				4396E0D5C6318ABA2314E458 /* Pods-Marine Insight iOSTests.release.xcconfig */,
+				42DBB371128D06C604409FE4 /* Pods-Marine Insight iOSUITests.debug.xcconfig */,
+				D5A4D4C0ADAF52DDF3B6FE93 /* Pods-Marine Insight iOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A029528BA1356184DCA1A6E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				780AA87FB3BEE350D86BE0AB /* Pods_Marine_Insight_iOS.framework */,
+				983731706BCBBEAFACE249EF /* Pods_Marine_Insight_iOSTests.framework */,
+				CF59674B8E83130903E7101D /* Pods_Marine_Insight_iOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11DBFE111EAA26FE004814F2 /* Marine Insight iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11DBFE3A1EAA26FE004814F2 /* Build configuration list for PBXNativeTarget "Marine Insight iOS" */;
+			buildPhases = (
+				1B5897EF8D8ADC9803E793D9 /* [CP] Check Pods Manifest.lock */,
+				11DBFE0E1EAA26FE004814F2 /* Sources */,
+				11DBFE0F1EAA26FE004814F2 /* Frameworks */,
+				11DBFE101EAA26FE004814F2 /* Resources */,
+				E0E998F7F6436773092B6D22 /* [CP] Embed Pods Frameworks */,
+				B455F49999F775BA6471AF4C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Marine Insight iOS";
+			productName = "Marine Insight iOS";
+			productReference = 11DBFE121EAA26FE004814F2 /* Marine Insight iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11DBFE251EAA26FE004814F2 /* Marine Insight iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11DBFE3D1EAA26FE004814F2 /* Build configuration list for PBXNativeTarget "Marine Insight iOSTests" */;
+			buildPhases = (
+				95EBBA4F9AEBF25ED05AE886 /* [CP] Check Pods Manifest.lock */,
+				11DBFE221EAA26FE004814F2 /* Sources */,
+				11DBFE231EAA26FE004814F2 /* Frameworks */,
+				11DBFE241EAA26FE004814F2 /* Resources */,
+				3FB41FA2AB243FF6E169927F /* [CP] Embed Pods Frameworks */,
+				3F23F3727224F231DF1172D3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11DBFE281EAA26FE004814F2 /* PBXTargetDependency */,
+			);
+			name = "Marine Insight iOSTests";
+			productName = "Marine Insight iOSTests";
+			productReference = 11DBFE261EAA26FE004814F2 /* Marine Insight iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11DBFE301EAA26FE004814F2 /* Marine Insight iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11DBFE401EAA26FE004814F2 /* Build configuration list for PBXNativeTarget "Marine Insight iOSUITests" */;
+			buildPhases = (
+				84E7A0283A980CB5C52D6631 /* [CP] Check Pods Manifest.lock */,
+				11DBFE2D1EAA26FE004814F2 /* Sources */,
+				11DBFE2E1EAA26FE004814F2 /* Frameworks */,
+				11DBFE2F1EAA26FE004814F2 /* Resources */,
+				76A51AF89DAFD346A8B4C43A /* [CP] Embed Pods Frameworks */,
+				78164CB41D7039669E8923C3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11DBFE331EAA26FE004814F2 /* PBXTargetDependency */,
+			);
+			name = "Marine Insight iOSUITests";
+			productName = "Marine Insight iOSUITests";
+			productReference = 11DBFE311EAA26FE004814F2 /* Marine Insight iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11DBFE0A1EAA26FE004814F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = marineinsight;
+				TargetAttributes = {
+					11DBFE111EAA26FE004814F2 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = DNWS59QT89;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					11DBFE251EAA26FE004814F2 = {
+						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 11DBFE111EAA26FE004814F2;
+					};
+					11DBFE301EAA26FE004814F2 = {
+						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 11DBFE111EAA26FE004814F2;
+					};
+				};
+			};
+			buildConfigurationList = 11DBFE0D1EAA26FE004814F2 /* Build configuration list for PBXProject "Marine Insight iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11DBFE091EAA26FE004814F2;
+			productRefGroup = 11DBFE131EAA26FE004814F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11DBFE111EAA26FE004814F2 /* Marine Insight iOS */,
+				11DBFE251EAA26FE004814F2 /* Marine Insight iOSTests */,
+				11DBFE301EAA26FE004814F2 /* Marine Insight iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11DBFE101EAA26FE004814F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119E575B1EB8B022007B5F17 /* MenuCell.xib in Resources */,
+				11DBFE201EAA26FE004814F2 /* LaunchScreen.storyboard in Resources */,
+				11DBFE1D1EAA26FE004814F2 /* Assets.xcassets in Resources */,
+				118D99E91EB504E400931740 /* SecondTableViewCell.xib in Resources */,
+				118D99E01EB5049900931740 /* FirstTableViewCell.xib in Resources */,
+				11DBFE1B1EAA26FE004814F2 /* Main.storyboard in Resources */,
+				115756131EEC4E3700D87A1C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11DBFE241EAA26FE004814F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11DBFE2F1EAA26FE004814F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B5897EF8D8ADC9803E793D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marine Insight iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F23F3727224F231DF1172D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marine Insight iOSTests/Pods-Marine Insight iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FB41FA2AB243FF6E169927F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marine Insight iOSTests/Pods-Marine Insight iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76A51AF89DAFD346A8B4C43A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marine Insight iOSUITests/Pods-Marine Insight iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78164CB41D7039669E8923C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marine Insight iOSUITests/Pods-Marine Insight iOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84E7A0283A980CB5C52D6631 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marine Insight iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95EBBA4F9AEBF25ED05AE886 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marine Insight iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B455F49999F775BA6471AF4C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marine Insight iOS/Pods-Marine Insight iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0E998F7F6436773092B6D22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Marine Insight iOS/Pods-Marine Insight iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marine Insight iOS/Pods-Marine Insight iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11DBFE0E1EAA26FE004814F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118D99DF1EB5049900931740 /* FirstTableViewCell.swift in Sources */,
+				93ABCEE61FB9BD0800E020CB /* OfflineViewController.swift in Sources */,
+				938591A31FBACD73007CFA25 /* OffDetailViewController.swift in Sources */,
+				1180A0431EE6D2AD008D9EB7 /* SearchViewController.swift in Sources */,
+				119E575D1EB8B365007B5F17 /* MenuViewCell.swift in Sources */,
+				113194FB1EB277C000964835 /* Article.swift in Sources */,
+				93ABCEE81FB9D0EE00E020CB /* SaveArticle.swift in Sources */,
+				11DBFE181EAA26FE004814F2 /* ViewController.swift in Sources */,
+				93467DF41FCFD074000EDD08 /* OfflineTableViewCell.swift in Sources */,
+				119E57591EB8970D007B5F17 /* MenuManager.swift in Sources */,
+				113194FD1EB30E6000964835 /* DetailViewController.swift in Sources */,
+				11DBFE161EAA26FE004814F2 /* AppDelegate.swift in Sources */,
+				118D99E81EB504E400931740 /* SecondTableViewCell.swift in Sources */,
+				1180A0461EE6E297008D9EB7 /* SearchTableViewCell.swift in Sources */,
+				118D99EB1EB5353000931740 /* ConnectionCheck.swift in Sources */,
+				93B5A5C41FCC44BC00AE5C62 /* NoInternetViewController.swift in Sources */,
+				113194F91EB2762000964835 /* ArticleCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11DBFE221EAA26FE004814F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DBFE2B1EAA26FE004814F2 /* Marine_Insight_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11DBFE2D1EAA26FE004814F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DBFE361EAA26FE004814F2 /* Marine_Insight_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11DBFE281EAA26FE004814F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11DBFE111EAA26FE004814F2 /* Marine Insight iOS */;
+			targetProxy = 11DBFE271EAA26FE004814F2 /* PBXContainerItemProxy */;
+		};
+		11DBFE331EAA26FE004814F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11DBFE111EAA26FE004814F2 /* Marine Insight iOS */;
+			targetProxy = 11DBFE321EAA26FE004814F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11DBFE191EAA26FE004814F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11DBFE1A1EAA26FE004814F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11DBFE1E1EAA26FE004814F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11DBFE1F1EAA26FE004814F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11DBFE381EAA26FE004814F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11DBFE391EAA26FE004814F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11DBFE3B1EAA26FE004814F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 690512E9CE6712078E4DB531 /* Pods-Marine Insight iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DNWS59QT89;
+				INFOPLIST_FILE = "Marine Insight iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marineinsight.Marine-Insight-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		11DBFE3C1EAA26FE004814F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 199F9511CE89F1704C644AF5 /* Pods-Marine Insight iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DNWS59QT89;
+				INFOPLIST_FILE = "Marine Insight iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marineinsight.Marine-Insight-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		11DBFE3E1EAA26FE004814F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 394C4B251F7913196EE23A61 /* Pods-Marine Insight iOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(inherited) \"${PODS_ROOT}/Firebase/Core/Sources\" \"${PODS_ROOT}/Headers/Public\" \"${PODS_ROOT}/Headers/Public/Firebase\" \"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\" \"${PODS_ROOT}/Headers/Public/FirebaseCore\" \"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\" \"${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK\"";
+				INFOPLIST_FILE = "Marine Insight iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marineinsight.Marine-Insight-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marine Insight iOS.app/Marine Insight iOS";
+			};
+			name = Debug;
+		};
+		11DBFE3F1EAA26FE004814F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4396E0D5C6318ABA2314E458 /* Pods-Marine Insight iOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Marine Insight iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marineinsight.Marine-Insight-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marine Insight iOS.app/Marine Insight iOS";
+			};
+			name = Release;
+		};
+		11DBFE411EAA26FE004814F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42DBB371128D06C604409FE4 /* Pods-Marine Insight iOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Marine Insight iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marineinsight.Marine-Insight-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "Marine Insight iOS";
+			};
+			name = Debug;
+		};
+		11DBFE421EAA26FE004814F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5A4D4C0ADAF52DDF3B6FE93 /* Pods-Marine Insight iOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Marine Insight iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marineinsight.Marine-Insight-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "Marine Insight iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11DBFE0D1EAA26FE004814F2 /* Build configuration list for PBXProject "Marine Insight iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11DBFE381EAA26FE004814F2 /* Debug */,
+				11DBFE391EAA26FE004814F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11DBFE3A1EAA26FE004814F2 /* Build configuration list for PBXNativeTarget "Marine Insight iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11DBFE3B1EAA26FE004814F2 /* Debug */,
+				11DBFE3C1EAA26FE004814F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11DBFE3D1EAA26FE004814F2 /* Build configuration list for PBXNativeTarget "Marine Insight iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11DBFE3E1EAA26FE004814F2 /* Debug */,
+				11DBFE3F1EAA26FE004814F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11DBFE401EAA26FE004814F2 /* Build configuration list for PBXNativeTarget "Marine Insight iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11DBFE411EAA26FE004814F2 /* Debug */,
+				11DBFE421EAA26FE004814F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11DBFE0A1EAA26FE004814F2 /* Project object */;
+}
